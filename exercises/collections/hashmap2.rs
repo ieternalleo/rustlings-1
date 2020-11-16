@@ -12,7 +12,6 @@
 // Execute the command `rustlings hint collections4` if you need
 // hints.
 
-// I AM NOT DONE
 
 use std::collections::HashMap;
 
@@ -38,6 +37,19 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
         // TODO: Put new fruits if not already present. Note that you
         // are not allowed to put any type of fruit that's already
         // present!
+        
+
+        /*
+            * HashMap.entry(key) -> returns enum Entry
+            * enum Entry -> represents a value that may or may not exist for a given key
+            * Entry.or_insert(value) -> 
+                - If Entry exists:
+                    - Returns a mutable reference to value corresponding to the key of Entyr
+                - Else:
+                    - Inserts new key with value
+                    - Returns a mutable reference to the new value
+        */
+        basket.entry(fruit).or_insert(1);
     }
 }
 

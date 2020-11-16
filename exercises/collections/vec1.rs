@@ -4,11 +4,20 @@
 // Make me compile and pass the test!
 // Execute the command `rustlings hint collections1` if you need hints.
 
-// I AM NOT DONE
+
+/*
+    2 Ways to define a vector:
+        1) Vec::new() - elements must be pushed in
+        2) vec![elements] - instatiate Vec with elements
+    
+
+*/
+
 
 fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     let a = [10, 20, 30, 40]; // a plain array
-    let v = // TODO: declare your vector here with the macro for vectors
+    // TODO: declare your vector here with the macro for vectors
+    let v = vec![10,20,30,40];
 
     (a, v)
 }
